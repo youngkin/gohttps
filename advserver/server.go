@@ -69,9 +69,9 @@ Options:
 		if err != nil {
 			body = []byte(fmt.Sprintf("error reading request body: %s", err))
 		}
-		resp := fmt.Sprintf("Hello, %s from Advannced Server!", body)
+		resp := fmt.Sprintf("Hello, %s from Advanced Server!", body)
 		w.Write([]byte(resp))
-		log.Printf("SimpleServer: Sent response %s", resp)
+		log.Printf("Advanced Server: Sent response %s", resp)
 	})
 
 	log.Printf("Starting HTTPS server on host %s and port %s", *host, *port)
